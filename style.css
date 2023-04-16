@@ -1,21 +1,40 @@
 /* Use flexbox to display the grid */
 #grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(16, 50px);
+    grid-template-rows: repeat(16, 50px);
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-  }
+    margin-top: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
-  /* Style the individual grid squares */
-  .grid-square {
+/* Style the individual grid squares */
+.grid-square {
     width: 50px;
     height: 50px;
     border: 1px solid black;
     box-sizing: border-box;
-    transition: background-color 0.2s ease-in-out;
-  }
+    background-color: white;
+}
 
-  /* Hover effect that changes the background color of grid squares */
-  .grid-square:hover {
-    background-color: #333;
-  }
+/* Style the button */
+#new-grid-button {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the popup input */
+#num-squares-input {
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+}
