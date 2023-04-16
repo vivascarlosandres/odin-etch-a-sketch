@@ -7,3 +7,7 @@ for (let i = 0; i < 256; i++) {
   square.classList.add('grid-square');
   gridContainer.appendChild(square);
 }
+
+// Set the grid container to display as a 16x16 grid
+gridContainer.style.gridTemplateColumns = 'repeat(16, 50px)';
+gridContainer.style.gridTemplateRows = 'repeat(16, 50px)';
